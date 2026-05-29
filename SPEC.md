@@ -3,8 +3,8 @@
 ## 概要
 
 **サービス名**: Qualification Finder
-**バージョン**: 1.0.0
-**更新日**: 2026-05-27
+**バージョン**: 1.1.0
+**更新日**: 2026-05-29
 **URL**: https://appadaycreator.com/qualification-finder/
 
 性格・得意分野・目標から最適な資格を診断。IT・語学・ビジネス・医療系など100資格以上から提案。
@@ -57,6 +57,17 @@
 - [睡眠の質チェッカー](https://appadaycreator.com/sleep-quality-checker/)
 - [BMI・体重管理](https://appadaycreator.com/bmi-body-tracker/)
 - [家計簿診断](https://appadaycreator.com/household-budget-analyzer/)
+
+## 更新履歴
+
+### v1.1.0 (2026-05-29)
+- Font Awesome 6.5.1 CDN追加（全アイコン表示修正）
+- selectOption関数のeventバグ修正（Safari/Firefox対応）
+- 選択後オートアドバンス機能追加（0.4秒後に自動次問移行）
+- ヘッダー・イントロ・アフィリエイトセクションの空スパンに絵文字追加
+- 通信講座A8 URLプレースホルダーを公式URLに変更（ユーキャン・スタディング・キャリカレ）
+- 結果画面にLINE/Xシェアボタン追加（資格名で動的更新）
+- main外セクションにmax-widthコンテナ追加（PC表示レイアウト修正）
 
 ## テスト
 

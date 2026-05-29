@@ -22,6 +22,8 @@
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -237,19 +239,19 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
   <header class="gradient-header text-white shadow-xl">
     <div class="max-w-3xl mx-auto px-4 py-8 text-center">
       <div class="flex items-center justify-center gap-3 mb-3">
-        <span class="text-4xl text-yellow-300"></span>
+        <span class="text-4xl text-yellow-300">🏆</span>
         <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight">資格取得適性診断</h1>
       </div>
       <p class="text-blue-100 text-sm md:text-base font-medium">【無料】職業・性格・目標から最適な資格と通信講座を提案</p>
       <div class="flex flex-wrap justify-center gap-2 mt-4">
         <span class="bg-white bg-opacity-20 text-white text-xs px-3 py-1 rounded-full">
-          <span class="mr-1"></span>10問で診断完了
+          <span class="mr-1">✅</span>10問で診断完了
         </span>
         <span class="bg-white bg-opacity-20 text-white text-xs px-3 py-1 rounded-full">
-          <span class="mr-1"></span>100種類以上の資格から提案
+          <span class="mr-1">📋</span>100種類以上の資格から提案
         </span>
         <span class="bg-white bg-opacity-20 text-white text-xs px-3 py-1 rounded-full">
-          <span class="mr-1"></span>完全無料
+          <span class="mr-1">🎁</span>完全無料
         </span>
       </div>
     </div>
@@ -262,7 +264,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
     <section id="intro-section" class="mb-8">
       <div class="bg-white rounded-2xl shadow-md p-6 md:p-8">
         <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <span class="text-yellow-500"></span>
+          <span class="text-yellow-500">✨</span>
           あなたに合った資格がわかります
         </h2>
         <p class="text-gray-600 leading-relaxed mb-4">
@@ -273,15 +275,15 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
         </p>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
           <div class="text-center bg-blue-50 rounded-xl p-3">
-            <span class="text-2xl text-yellow-500 mb-1"></span>
+            <span class="text-2xl text-yellow-500 mb-1">💰</span>
             <p class="text-xs text-gray-600 font-medium">FP・簿記</p>
           </div>
           <div class="text-center bg-indigo-50 rounded-xl p-3">
-            <span class="text-2xl text-indigo-500 mb-1"></span>
+            <span class="text-2xl text-indigo-500 mb-1">💻</span>
             <p class="text-xs text-gray-600 font-medium">IT・デジタル</p>
           </div>
           <div class="text-center bg-green-50 rounded-xl p-3">
-            <span class="text-2xl text-green-600 mb-1"></span>
+            <span class="text-2xl text-green-600 mb-1">🏠</span>
             <p class="text-xs text-gray-600 font-medium">宅建・法律</p>
           </div>
           <div class="text-center bg-purple-50 rounded-xl p-3">
@@ -290,7 +292,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
           </div>
         </div>
         <button id="start-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl text-lg transition-colors shadow-lg flex items-center justify-center gap-2" aria-label="無料で診断スタート">
-          
+          <i class="fa-solid fa-play"></i>
           無料で診断スタート
         </button>
       </div>
@@ -344,7 +346,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
     <section id="result-section" class="hidden">
       <!-- Result Header -->
       <div class="result-card bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-2xl shadow-xl p-6 md:p-8 mb-6 text-center">
-        <span class="text-5xl text-yellow-300 mb-3"></span>
+        <span class="text-5xl text-yellow-300 mb-3 block">🏆</span>
         <h2 class="text-2xl font-extrabold mb-2">診断結果</h2>
         <p class="text-blue-100">あなたにおすすめの資格はこちらです</p>
       </div>
@@ -369,7 +371,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
       <!-- Affiliate CTAs -->
       <div class="result-card bg-white rounded-2xl shadow-md p-6 md:p-8 mb-6">
         <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-          <span class="text-blue-500"></span>
+          <span class="text-blue-500">📚</span>
           おすすめ通信講座
         </h3>
         <p class="text-gray-600 text-sm mb-5">診断結果に基づき、社会人に人気の通信講座を厳選しました。無料の資料請求・体験から始められます。</p>
@@ -379,12 +381,12 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
           <div class="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
             <div class="flex items-start gap-3">
               <div class="bg-orange-100 rounded-lg p-2 flex-shrink-0">
-                <span class="text-orange-500 text-xl"></span>
+                <i class="fa-solid fa-book-open text-orange-500 text-xl"></i>
               </div>
               <div class="flex-1">
                 <h4 class="font-bold text-gray-800 mb-1">ユーキャン</h4>
                 <p class="text-sm text-gray-600 mb-3">150講座以上・受講者累計4,000万人。充実したテキストと添削指導で確実に合格を目指せます。</p>
-                <a href="A8_UKCAN_URL_PLACEHOLDER" rel="nofollow sponsored noopener noreferrer" target="_blank"
+                <a href="https://www.u-can.co.jp/" rel="nofollow sponsored noopener noreferrer" target="_blank"
                    class="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
                   <span>↗</span>
                   【ユーキャン】150講座以上！無料資料請求 →
@@ -397,12 +399,12 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
           <div class="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
             <div class="flex items-start gap-3">
               <div class="bg-blue-100 rounded-lg p-2 flex-shrink-0">
-                <span class="text-blue-500 text-xl"></span>
+                <i class="fa-solid fa-mobile-screen text-blue-500 text-xl"></i>
               </div>
               <div class="flex-1">
                 <h4 class="font-bold text-gray-800 mb-1">スタディング</h4>
                 <p class="text-sm text-gray-600 mb-3">スマホ完結・業界最安水準。通勤・隙間時間で学べる動画講義と問題演習で効率的に合格。</p>
-                <a href="A8_STUDYING_URL_PLACEHOLDER" rel="nofollow sponsored noopener noreferrer" target="_blank"
+                <a href="https://studying.jp/" rel="nofollow sponsored noopener noreferrer" target="_blank"
                    class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
                   <span>↗</span>
                   【スタディング】スマホで学べる資格講座 無料体験 →
@@ -415,12 +417,12 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
           <div class="border border-gray-200 rounded-xl p-4 hover:border-blue-300 transition-colors">
             <div class="flex items-start gap-3">
               <div class="bg-green-100 rounded-lg p-2 flex-shrink-0">
-                <span class="text-green-600 text-xl"></span>
+                <i class="fa-solid fa-shield-halved text-green-600 text-xl"></i>
               </div>
               <div class="flex-1">
                 <h4 class="font-bold text-gray-800 mb-1">キャリカレ</h4>
                 <p class="text-sm text-gray-600 mb-3">不合格なら全額返金・合格で2講座目無料の手厚い保証。担任制のサポートで安心して学べます。</p>
-                <a href="A8_CAREER_COLLEGE_URL_PLACEHOLDER" rel="nofollow sponsored noopener noreferrer" target="_blank"
+                <a href="https://www.c-c-s.jp/" rel="nofollow sponsored noopener noreferrer" target="_blank"
                    class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg text-sm transition-colors">
                   <span>↗</span>
                   【キャリカレ】不合格なら全額返金！資格の通信講座 →
@@ -449,10 +451,25 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
         </div>
       </div>
 
+      <!-- Share -->
+      <div class="result-card bg-white rounded-2xl shadow-md p-5 mb-4">
+        <p class="text-sm font-semibold text-gray-700 mb-3 text-center">📣 診断結果をシェアする</p>
+        <div class="flex gap-3">
+          <a href="https://line.me/R/share?text=資格適性診断であなたにおすすめの資格がわかる！%20https://appadaycreator.com/qualification-finder/" target="_blank" rel="noopener"
+             class="flex-1 text-center text-white font-bold py-2 px-3 rounded-xl text-sm transition-opacity hover:opacity-90" style="background:#06C755;">
+            <i class="fa-brands fa-line mr-1"></i>LINEでシェア
+          </a>
+          <a id="share-x-btn" href="https://twitter.com/intent/tweet?text=資格適性診断でFPが向いていると分かりました！&url=https://appadaycreator.com/qualification-finder/&via=appadaycreator" target="_blank" rel="noopener"
+             class="flex-1 text-center bg-black text-white font-bold py-2 px-3 rounded-xl text-sm transition-opacity hover:opacity-90">
+            <i class="fa-brands fa-x-twitter mr-1"></i>Xでシェア
+          </a>
+        </div>
+      </div>
+
       <!-- Retry -->
       <div class="text-center mb-8">
         <button id="retry-btn" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-8 rounded-xl transition-colors">
-          <span class="mr-2"></span>もう一度診断する
+          <i class="fa-solid fa-rotate-right mr-2"></i>もう一度診断する
         </button>
       </div>
     </section>
@@ -541,7 +558,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
     <!-- Related Links -->
     <section class="bg-white rounded-2xl shadow-md p-6 md:p-8 mb-8">
       <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-        <span class="text-blue-500"></span>
+        <span class="text-blue-500">🔗</span>
         関連サービス
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -574,8 +591,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
 
   </main>
 
-  
-    
+  <div class="max-w-3xl mx-auto px-4">
     <!-- phase8-social-proof -->
     <div class="card p-5 mb-4">
       <h3 class="font-bold text-gray-800 mb-3 text-sm">⭐ 利用者の声</h3>
@@ -620,6 +636,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
         楽天市場で「資格 おすすめ 本」を検索 →
       </a>
     </div>
+  </div><!-- /max-w-3xl -->
     <!-- Footer -->
   
 <section style="background:#f0f9ff;border-top:1px solid #bae6fd;padding:16px;text-align:center;font-size:12px;color:#0369a1;">
@@ -1113,7 +1130,7 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
         btn.className = "option-btn w-full flex items-center gap-3 p-3 border-2 border-gray-200 rounded-xl text-left hover:border-blue-400 " +
           (answers[currentQuestion] === opt.value ? "selected" : "bg-white text-gray-700");
         btn.innerHTML = `<i class="${opt.icon} w-5 text-center text-blue-500"></i><span class="font-medium">${opt.label}</span>`;
-        btn.addEventListener("click", () => selectOption(opt.value));
+        btn.addEventListener("click", (e) => selectOption(opt.value, e.currentTarget));
         container.appendChild(btn);
       });
 
@@ -1127,15 +1144,19 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
       }
     }
 
-    function selectOption(value) {
+    function selectOption(value, el) {
       answers[currentQuestion] = value;
       document.querySelectorAll(".option-btn").forEach(btn => {
-        btn.classList.remove("selected", "bg-white", "text-gray-700");
+        btn.classList.remove("selected");
         btn.classList.add("bg-white", "text-gray-700");
       });
-      event.currentTarget.classList.add("selected");
-      event.currentTarget.classList.remove("bg-white", "text-gray-700");
+      el.classList.add("selected");
+      el.classList.remove("bg-white", "text-gray-700");
       document.getElementById("next-btn").disabled = false;
+      // オートアドバンス: 0.4秒後に自動で次の質問へ（最終問は除く）
+      if (currentQuestion < 9) {
+        setTimeout(() => document.getElementById("next-btn").click(), 400);
+      }
     }
 
     function showResult() {
@@ -1162,15 +1183,15 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
             <p class="text-gray-700 leading-relaxed mb-4">${topQ.description}</p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
               <div class="bg-gray-50 rounded-lg p-3">
-                <p class="text-xs text-gray-500 mb-1"><span class="mr-1"></span>学習時間の目安</p>
+                <p class="text-xs text-gray-500 mb-1"><span class="mr-1">⏱</span>学習時間の目安</p>
                 <p class="text-sm font-semibold text-gray-800">${topQ.studyHours}</p>
               </div>
               <div class="bg-gray-50 rounded-lg p-3">
-                <p class="text-xs text-gray-500 mb-1"><span class="mr-1"></span>合格率</p>
+                <p class="text-xs text-gray-500 mb-1"><span class="mr-1">📊</span>合格率</p>
                 <p class="text-sm font-semibold text-gray-800">${topQ.passRate}</p>
               </div>
               <div class="bg-gray-50 rounded-lg p-3">
-                <p class="text-xs text-gray-500 mb-1"><span class="mr-1"></span>講座費用目安</p>
+                <p class="text-xs text-gray-500 mb-1"><span class="mr-1">💴</span>講座費用目安</p>
                 <p class="text-sm font-semibold text-gray-800">${topQ.cost}</p>
               </div>
             </div>
@@ -1203,6 +1224,13 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
         `;
         allEl.appendChild(card);
       });
+
+      // X共有テキストを診断結果の資格名で動的更新
+      const shareXBtn = document.getElementById("share-x-btn");
+      if (shareXBtn) {
+        const shareText = encodeURIComponent(`資格適性診断で「${topQ.name}」が向いていると分かりました！あなたも試してみてください。`);
+        shareXBtn.href = `https://twitter.com/intent/tweet?text=${shareText}&url=https://appadaycreator.com/qualification-finder/&via=appadaycreator`;
+      }
 
       window.scrollTo({ top: 0, behavior: "smooth" });
     }
