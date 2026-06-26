@@ -59,13 +59,13 @@ img{max-width:100%;height:auto;display:block}
 /* Hero right side */
 .hero-visual{position:relative}
 .hero-photo-wrap{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(99,102,241,.15)}
-.hero-photo-wrap img{width:100%;height:360px;object-fit:cover}
-.hero-score-card{position:absolute;bottom:-20px;left:-24px;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 8px 32px rgba(0,0,0,.15);min-width:220px}
+.hero-photo-wrap img{width:100%;height:440px;object-fit:cover}
+.hero-score-card{position:absolute;bottom:-20px;left:-24px;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 8px 32px rgba(0,0,0,.15);min-width:268px}
 .score-card-title{font-size:.72rem;font-weight:700;color:#6b7280;margin-bottom:10px;text-align:center}
 .score-circle-wrap{display:flex;justify-content:center;margin-bottom:12px}
-.score-circle{width:72px;height:72px;border-radius:50%;background:conic-gradient(#6366f1 315deg, #e2e8f0 0deg);display:flex;align-items:center;justify-content:center;position:relative}
-.score-circle-inner{background:#fff;width:56px;height:56px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.score-num{font-size:1.5rem;font-weight:900;color:#4f46e5;line-height:1}
+.score-circle{width:96px;height:96px;border-radius:50%;background:conic-gradient(#6366f1 315deg, #e2e8f0 0deg);display:flex;align-items:center;justify-content:center;position:relative}
+.score-circle-inner{background:#fff;width:76px;height:76px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.score-num{font-size:2.1rem;font-weight:900;color:#4f46e5;line-height:1}
 .score-pt{font-size:.6rem;color:#6b7280;font-weight:600}
 .score-items{display:flex;flex-direction:column;gap:6px}
 .score-item{display:flex;justify-content:space-between;align-items:center;font-size:.76rem;gap:12px}
@@ -137,9 +137,9 @@ img{max-width:100%;height:auto;display:block}
 .results-mock-header span{color:#fff;font-weight:800;font-size:.9rem}
 .results-mock-body{padding:20px}
 .results-mock-score-row{display:flex;gap:16px;margin-bottom:20px}
-.rmsr-circle{width:80px;height:80px;border-radius:50%;background:conic-gradient(#6366f1 315deg,#e2e8f0 0);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.rmsr-circle-inner{background:#fff;width:62px;height:62px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.rmsr-score{font-size:1.6rem;font-weight:900;color:#4f46e5;line-height:1}
+.rmsr-circle{width:104px;height:104px;border-radius:50%;background:conic-gradient(#6366f1 315deg,#e2e8f0 0);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.rmsr-circle-inner{background:#fff;width:82px;height:82px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.rmsr-score{font-size:2.2rem;font-weight:900;color:#4f46e5;line-height:1}
 .rmsr-pt{font-size:.6rem;color:#6b7280}
 .rmsr-details{flex:1}
 .rmsr-detail-row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid #f1f5f9;font-size:.78rem}
@@ -183,6 +183,12 @@ img{max-width:100%;height:auto;display:block}
 .comp-card.self .comp-desc{color:#475569}
 .comp-card.other .comp-desc{color:#94a3b8}
 @media(max-width:900px){.comparison-grid{grid-template-columns:1fr}}
+.comp-feat-list{list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:6px}
+.comp-feat-list li{font-size:.76rem;display:flex;align-items:center;gap:7px;font-weight:600;padding:3px 0;border-bottom:1px solid rgba(0,0,0,.05)}
+.comp-feat-list li:last-child{border-bottom:none}
+.comp-card.self .comp-feat-list li{color:#4338ca}
+.comp-card.other .comp-feat-list li{color:#9ca3af;text-decoration:line-through;text-decoration-color:#d1d5db}
+.comp-feat-mark{font-size:.9rem;flex-shrink:0;text-decoration:none!important}
 
 /* Use cases */
 .usecases-section{background:#f8fafc;padding:72px 24px}
@@ -300,7 +306,7 @@ img{max-width:100%;height:auto;display:block}
         <img src="../assets/photos/photo_02.jpg" alt="資格取得を目指す社会人">
       </div>
       <div class="hero-score-card">
-        <p class="score-card-title">あなたの適性スコア</p>
+        <p class="score-card-title">あなたの適性スコア <span style="color:#6366f1;font-weight:800">TOP3</span></p>
         <div class="score-circle-wrap">
           <div class="score-circle">
             <div class="score-circle-inner">
@@ -325,7 +331,13 @@ img{max-width:100%;height:auto;display:block}
             <div class="score-item-bar"><div class="score-item-bar-fill" style="width:78%"></div></div>
             <span class="score-item-val">78点</span>
           </div>
+          <div class="score-item">
+            <span class="score-item-name">ビジネス法務</span>
+            <div class="score-item-bar"><div class="score-item-bar-fill" style="width:68%"></div></div>
+            <span class="score-item-val">68点</span>
+          </div>
         </div>
+        <a href="../" style="display:block;text-align:center;font-size:.72rem;color:#6366f1;font-weight:700;margin-top:10px;padding-top:8px;border-top:1px solid #e2e8f0">すべての資格を見る →</a>
       </div>
       <div class="hero-mini-badges">
         <div class="mini-badge"><span class="mini-badge-icon">👥</span>13万+利用者</div>
@@ -590,29 +602,44 @@ img{max-width:100%;height:auto;display:block}
       <p class="section-subtitle">AI資格マッチングでBrushUP学びなどと差別化</p>
     </div>
     <div class="comparison-grid">
+      <div class="comp-card other">
+        <div class="comp-card-badge">他の資格検索サービス</div>
+        <div class="comp-icon">
+          <img src="../assets/icons/split/02-04.png" alt="検索">
+        </div>
+        <div class="comp-title">キーワード検索のみ</div>
+        <div class="comp-desc">資格名・難易度で絞り込むだけ。あなたの性格・目標に合った個別提案は非対応。</div>
+        <ul class="comp-feat-list">
+          <li><span class="comp-feat-mark">✗</span>AI分析・スコアリングなし</li>
+          <li><span class="comp-feat-mark">✗</span>給与・求人データなし</li>
+          <li><span class="comp-feat-mark">✗</span>継続学習サポートなし</li>
+        </ul>
+      </div>
+      <div class="comp-card other">
+        <div class="comp-card-badge">一般的な資格診断サイト</div>
+        <div class="comp-icon">
+          <img src="../assets/icons/split/01-03.png" alt="診断">
+        </div>
+        <div class="comp-title">簡易チェックのみ</div>
+        <div class="comp-desc">2〜3問で大まかなカテゴリを絞るだけ。なぜその資格が最適か理由が示されない。</div>
+        <ul class="comp-feat-list">
+          <li><span class="comp-feat-mark">✗</span>個別スコア・根拠なし</li>
+          <li><span class="comp-feat-mark">✗</span>キャリアパスデータなし</li>
+          <li><span class="comp-feat-mark">✗</span>学習フォローなし</li>
+        </ul>
+      </div>
       <div class="comp-card self">
         <div class="comp-card-badge">AI資格適性診断</div>
         <div class="comp-icon">
           <img src="../assets/icons/split/01-01.png" alt="AI">
         </div>
-        <div class="comp-title">AI分析 × 数値スコア</div>
-        <div class="comp-desc">100+資格をAIがスコアリング。なぜその資格かの理由を数値と言語で説明。再診断でシナリオ比較も可能。</div>
-      </div>
-      <div class="comp-card self">
-        <div class="comp-card-badge">AI資格適性診断</div>
-        <div class="comp-icon">
-          <img src="../assets/icons/split/01-05.png" alt="データ">
-        </div>
-        <div class="comp-title">給与・求人データ統合</div>
-        <div class="comp-desc">厚生労働省データをもとに、資格取得後の給与目安・求人件数・具体的なキャリアパスを一括表示。</div>
-      </div>
-      <div class="comp-card self">
-        <div class="comp-card-badge">AI資格適性診断</div>
-        <div class="comp-icon">
-          <img src="../assets/icons/split/03-01.png" alt="サポート">
-        </div>
-        <div class="comp-title">LINE / Slackで継続サポート</div>
-        <div class="comp-desc">診断後もLINE・Slackで学習進捗の継続サポート。一度で終わらず、合格まで伴走するサービス設計。</div>
+        <div class="comp-title">AI × データ × 伴走サポート</div>
+        <div class="comp-desc">10問で100+資格をAIスコアリング。給与・求人データも一括表示。合格まで伴走。</div>
+        <ul class="comp-feat-list">
+          <li><span class="comp-feat-mark">✓</span>AI分析・100点スコア表示</li>
+          <li><span class="comp-feat-mark">✓</span>給与・求人・キャリアパス</li>
+          <li><span class="comp-feat-mark">✓</span>LINE/Slackサポート</li>
+        </ul>
       </div>
     </div>
   </div>
